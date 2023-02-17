@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--auteur : Limard Goethe
+date : 14/01/2023 mise à jour
+objectif : Créer un site reponsive-->
+<!--debut html-->
+<html>
+    <!--debut -->
+    <head>
+         <!--Titre-->
+         <title>Html Avancée</title>
+         <!--Balise meta-->
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+         <!--Balise meta-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <!--Balises police importé-->
+         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+         <!--Balise lien css-->
+         <link rel="stylesheet" href="style.css"/>
+
+    </head>
+    <!--fin head-->
+    <!--body-->
+    <body>
+        <!--debut bloc principale-->
+        <div id="wrapper">
+            <!--debut header-->
+            <header>
+                <div class="grille header">
+
+                    <div class="col-12">
+
+                         <!--Titre header-->
+                         <h1 class="header-titre">
+                            <b>d-angle</b><br/>
+                            <span class="header--is-regular">a reponsive answer</span>
+                        </h1>
+                        <!--fin titre header-->
+
+                        <!--debut menu navigation-->
+                        <div id="top" class="navigation">
+
+                            <!--bouton menu-->
+                            
+                            <div id="btn-menu">
+                                <a href="#main-nav">
+                                    <span class="hamburger"></span>
+                                </a>
+                                <span class="menu">Menu</span>
+                            </div>
+                            <!--fin bouton menu-->
+
+                            <!--bloc navigation-->
+                            <nav class="menu-hamburger" id="main-nav">
+                                <!--bouton menu-->
+                                <div id="btn-menu">
+                                    <a href="#top">
+                                        <span class="hamburger"></span>
+                                    </a>
+                                    <span class="fermer">Fermer</span>
+                                </div>
+                                <!--fin bouton menu-->
+                                <!--debut navigation-->
+                                <div class="content-menu">
+                                    <ul class="item-menu">
+                                        <li class="item"><a href="#">Projets</a></li>
+                                        <li class="item"><a href="#">Pricing</a></li>
+                                        <li class="item"><a href="#">Tower</a></li>
+                                        <li class="item"><a href="#">Contacts</a></li>
+                                    </ul>
+                                </div>
+                                <!--fin navigation-->
+                            </nav>
+                            <!--fin bloc navigation-->
+                        </div>
+                        <!--fin menu navigation-->
+
+                    </div>
+
+                </div>
+            </header>
+            <!--fin header-->
+            <!--debut main-->
+            <main>
+               <!--debut grille-->
+               <div class="grille main">
+
+                    <!--1er ranger-->
+                    <div class="row row-main">
+
+                        <div class="col-6">
+                            <article class="conteneur-articleA conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-01.jpg" alt="un truc"/>
+                                </figure>
+                                <h2>Mauris odio tortor</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus aliquam a ante a laoreet. Nam luctus ac tortor 
+                                    id lobortis. Duis et turpis scelerisque, elementum urna in,
+                                    blandit neque. Sed eleifend magna eu purus venenatis accumsan in ac arcu. 
+                                    Phasellus et sollicitudin ipsum, at euismod risus. 
+                                    Cras condimentum purus semper ipsum fringilla
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-6 bloc-A">
+                            <article class="conteneur-articleA conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-03.jpg" alt="un truc"/>
+                                </figure>
+                                <h2> Sed eleifend magna eu purus</h2>
+                                <p>
+                                    Cras condimentum purus semper ipsum fringilla ultricies.
+                                    Duis porttitor dolor magna, nec laoreet lectus consequat vitae. 
+                                    In euismod lacus at accumsan malesuada. Pellentesque rutrum turpis erat. 
+                                    Nullam commodo erat ligula, vitae rhoncus enim molestie quis. Nunc nisl eros,
+                                    eleifend et condimentum at, imperdiet ac purus.
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+
+                        </div>
+                    </div>
+                    <!--fin 1er ranger-->
+
+                    <!--2eme ranger-->
+                    <div class="row row-main">
+                        <div class="col-4">
+                            <article class="conteneur-articleB conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-04.jpg" alt="un truc"/>
+                                </figure>
+                                <h2>Proin tincidunt placerat fermentum</h2>
+                                <p>
+                                    Proin tincidunt placerat fermentum. Nullam et euismod neque. 
+                                    Sed orci velit, molestie non magna vitae, luctus ultrices felis. 
+                                    Cras maximus ante in varius finibus. Ut vel elit nec purus facilisis tempor. 
+                                    Vestibulum sed urna vitae felis consequat posuere. 
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-4">
+                            <article  class="conteneur-articleB conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-02.jpg" alt="un truc"/>
+                                </figure>
+                                <h2> Nullam et euismod neque</h2>
+                                <p>
+                                    Donec pretium, nibh non mattis sagittis, mauris tortor laoreet urna, 
+                                    nec iaculis sapien leo sed lectus. Donec felis justo, sollicitudin vitae 
+                                    velit feugiat, mollis viverra libero. Maecenas vestibulum sapien eget ex 
+                                    tincidunt iaculis. Phasellus sit amet ante tellus. Sed vel ante eu diam 
+                                    faucibus condimentum eu vitae mi. 
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-4">
+                            <article class="conteneur-articleB conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-05.jpg" alt="un truc"/>
+                                </figure>
+                                <h2> Sed orci velit molestie non magna</h2>
+                                <p>
+                                    Donec pretium, nibh non mattis sagittis, mauris tortor laoreet urna, 
+                                    nec iaculis sapien leo sed lectus. Donec felis justo, sollicitudin vitae 
+                                    velit feugiat, mollis viverra libero. Maecenas vestibulum sapien eget ex 
+                                    tincidunt iaculis. Phasellus sit amet ante tellus. Sed vel ante eu diam 
+                                    faucibus condimentum eu vitae mi. 
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <!--fin 2eme ranger-->
+
+                    <!--3eme ranger-->
+                    <div class="row row-main">
+
+                        <div class="col-3">
+                            <article class="conteneur-articleC conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-06.jpg" alt="un truc"/>
+                                </figure>
+                                <h2>Nulla auctor fringilla nunc nec </h2>
+                                <p>
+                                    Donec lobortis nisi sed porta dictum. Curabitur finibus tincidunt purus e
+                                    get condimentum. Nulla auctor fringilla nunc nec scelerisque. Donec malesuada 
+                                    convallis enim in blandit. Aenean elementum pretium posuere. Mauris congue 
+                                    accumsan venenatis. Curabitur sodales ultrices ipsum, rutrum viverra neque 
+                                    lacinia quis. Nam ante est, commodo nec euismod in, maximus in sem.
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="col-3">
+                            <article class="conteneur-articleC conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-07.jpg" alt="un truc"/>
+                                </figure>
+                                <h2>Mauris congue accumsan venenatis</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam a 
+                                    ante a laoreet. Nam luctus ac tortor id lobortis. Duis et turpis scelerisque, 
+                                    elementum urna in, blandit neque. Sed eleifend magna eu purus venenatis 
+                                    accumsan in ac arcu. Phasellus et sollicitudin ipsum, at euismod risus. 
+                                    Cras condimentum purus semper ipsum fringilla ultricies. Duis porttitor 
+                                    dolor magna, nec laoreet lectus consequat vitae. In euism
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="col-3">
+                            <article class="conteneur-articleC conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-08.jpg" alt="un truc"/>
+                                </figure>
+                                <h2> Curabitur sodales ultrices ipsum</h2>
+                                <p>
+                                    Maecenas vestibulum sapien eget ex tincidunt iaculis. Phasellus sit amet ante 
+                                    tellus. Sed vel ante eu diam faucibus condimentum eu vitae mi. Suspendisse 
+                                    potenti. Sed dignissim, leo nec pulvinar fermentum, dolor lectus tempor nibh, 
+                                    sit amet bibendum turpis est a arcu. Cras vestibulum mollis hendrerit.
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="col-3">
+                            <article class="conteneur-articleC conteneur--is-marge">
+                                <figure>
+                                    <img src="images/img-09.jpg" alt="un truc"/>
+                                </figure>
+                                <h2>Nam ante est commodo nec euismod in</h2>
+                                <p>
+                                    Donec lobortis nisi sed porta dictum. Curabitur finibus tincidunt purus eget 
+                                    condimentum. Nulla auctor fringilla nunc nec scelerisque. Donec malesuada 
+                                    convallis enim in blandit. Aenean elementum pretium posuere. 
+                                    Mauris congue accumsan venenatis. Curabitur sodales ultrices ipsum, rutrum 
+                                    viverra neque lacinia quis. Nam ante est, commodo nec euismod in, maximus in 
+                                    sem.
+                                    <span class="lien-article">Lire la suite</span>
+                                </p>
+                            </article>
+
+                        </div>
+                    </div>
+                    <!--fin 3eme ranger-->
+
+               </div>
+               <!--fin grille-->
+            </main>
+            <!--fin-->
+            <!--debut footer-->
+            <footer>
+
+                <div class="grille footer">
+
+                    <div class="row row-footer">
+
+                        <div class="col-8">
+                            
+                            <form>
+                               <div class="contact">
+                                    <h2>
+                                        Contactez-nous
+                                    </h2>
+                               </div>
+                                <div class="conteneur-fomulaire"> 
+                                   
+                                    <p>
+                                        
+                                        <label for="nom"><span class="form-p--is-color">Nom*: </span></label><br/>
+                                        <input type="text" id="nom" placeholder="Votre nom" size="30"/>
+                                    </p>
+                                    <p>
+                                        <label for="telephone"><span class="form-p--is-color">Telephone*: </span></label><br/>
+                                        <input type="text" id="telephone" placeholder="Votre telephone" size="30"/>
+                                    </p>
+                                    <p>
+                                        <label for="email"><span class="form-p--is-color">E-mail*: </span></label><br/>
+                                        <input type="text" id="email" placeholder="Votre e-mail" size="30"/>
+                                    </p>
+                                    <p>
+                                        <label for="message"><span class="form-p--is-color">Message*:</span></label><br/>
+                                        <textarea id="message" cols="30" rows="5">
+                                            Votre message
+                                        </textarea>
+                                    </p>
+                
+                                </div>
+                                <div class="conteneur-btn">
+                                            <input type="submit" name="envoie" value="Envoyer" class="conteneur-btn-envoie--is-color"/><br/>
+                                            <input type="reset" name="effacer" value="Reset" class="conteneur-btn-reset--is-color"/>
+                                </div>
+                                
+                            </form>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-10 footer-col-12-lien">
+                            
+                            <div class="footer-div-lien-conteneur">
+                                <div class="div--rectangle"></div>
+                                
+                                <div class="div-lien">
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                </div>
+                            </div>
+
+                            <div class="footer-div-lien-conteneur">
+                                <div class="div--rectangle"></div>
+                       
+                                <div class="div-lien">
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                    <p> <a href="#">Lien d'un truc</a></p>
+                                </div>
+                            </div>
+
+                            <div id="A" class="footer-div-lien-conteneur">
+                                <div class="div--rectangle"></div>
+                                <div class="div-lien">
+                                    <p>  <a href="#">Lien d'un truc</a></p>
+                                    <p>  <a href="#">Lien d'un truc</a></p>
+                                    <p>  <a href="#">Lien d'un truc</a></p>
+                                    <p>  <a href="#">Lien d'un truc</a></p>
+                                    
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+            <!--fin -->
+        </div>
+        <!--fin bloc principale-->
+    </body>
+    <!--fin body-->
+
+</html>
+<!--fin html-->

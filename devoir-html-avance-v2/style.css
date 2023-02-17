@@ -1,0 +1,486 @@
+/*feuille de style html avancé*/
+/*auteur : Limard Goethe
+date : 15/01/2023, mise à jour
+objectif : feuille de styles*/
+
+/*reset*/
+*{
+    margin: 0;
+    padding :0
+}
+/*fin reset*/
+
+/*taille de reference des police*/
+html{
+    font-size: 1em;
+}
+/*fin*/
+ 
+/*debut body*/
+body{
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.25;
+
+}
+/*fin body*/
+
+/******************Regle commune**************/
+/*debut wrapper*/
+#wrapper{
+    width: 80%;
+    max-width: 1200px;
+    margin: 2% auto;
+}
+/*fin wrapper*/
+
+/*grille header*/
+
+.col-12{
+    min-height: 90vh;
+    background: url(images/bkg.jpg) no-repeat;
+    background-size: cover ;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+/*Titre header*/
+.header-titre{
+    margin-left: 2%;
+    align-self: center;
+}
+.header--is-regular{
+    font-weight: lighter;
+}
+/*fin titre*/
+
+/*****Menu de navigation***/
+.navigation{
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    top: 4vh;
+    right:6vw;
+}
+.fermer{
+    position: absolute;
+    top: 4vh;
+    right:6vw;
+}
+.hamburger{
+    background-image: url("images/burg.png");
+    background-position: top;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top : 4vh;
+    right: 4vw;
+}
+.menu-hamburger .hamburger{
+    background-position: bottom;
+}
+.menu-hamburger{
+    background-color: hsl(163, 27.7%, 32%);
+    position: absolute;
+    width: calc((300 * 100) / 1200);
+    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: -20em;
+    right: 0;
+    display: none;
+}
+.menu-hamburger:target{
+    display: block;
+}
+
+.content-menu
+{
+    margin-top: 5em;
+    /*background-color: blue;*/
+    height: 80%;
+}
+
+.item-menu .item{
+    list-style:none ;
+    margin: 10% 10%;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.item a:hover{
+    color: #f44336;
+}
+#btn-menu:hover{
+    opacity: 0.5;
+}
+
+/***fin grille header****/
+
+/***debut grille main***/
+.main{
+    width: 80%;
+    margin: 2% auto;
+}
+
+.row-main{
+    margin-bottom : 4% ;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+h2{
+    margin: 2% 0;
+}
+.lien-article{
+    color:#549ff3;
+}
+.lien-article:hover{
+    color:#f00;
+}
+/*colonne*/
+.col-6{ 
+    width: 46%;
+    max-width: 100%;
+    margin-left: 2%;
+}
+.col-4{
+    width: 30%;
+    max-width: 100;
+    margin-left: 2%;
+}
+.col-3{
+    width: 22%;
+    max-width: 100%;
+    margin-left: 2%;
+}
+figure img{
+    max-width: 100%;
+}
+
+/*******grille footer*********/
+.row-footer{
+    min-height: 100vh;
+    background-image: url(images/bkg-form.jpg);
+    background-size: cover;
+    background-position:center center ;
+}
+
+.col-8{
+    width:70%;
+    margin: 2% auto;
+    padding-top: 6%;
+}
+ form{
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+   /*padding: 2%;*/
+    background-color: rgba(250, 250,250, .5);
+    border: 1px solid rgba(250, 250,250, .5);
+    border-radius: 1em;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    align-self: start;
+    margin-left: 5%;
+    color: #669;
+}
+.conteneur-fomulaire{
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    /*background-color: blue;*/
+    margin-left: 2%;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.conteneur-fomulaire p{
+    width: 30%;
+    height: 5%;
+    max-width: 100%;
+    margin: 4%;
+}
+
+.conteneur-btn{
+    width: 40%;
+    max-width: 100%;
+    height: 20%;
+    margin : 1% auto;
+    /*padding: 3%;*/
+    /*background-color: blue;*/
+}
+.conteneur-btn .conteneur-btn-envoie--is-color{
+    width: 60%;
+    max-width: 100%;
+    height: 2.5em;
+    /*margin-top: 1.5%;*/
+    margin-left: 20% ;
+    margin-bottom: 2em;
+
+    border: 1px solid #669;
+    border-radius: 20px;
+    color:#fff;
+    background-image: linear-gradient(#b9bbde,#669);
+}
+.conteneur-btn .conteneur-btn-reset--is-color{
+    width: 60%;
+    max-width: 100%;
+    height: 2.5em;
+    margin-left: 20% ;
+
+    border: 1px solid #669;
+    color:#fff;
+    border-radius: 20px;
+
+    background-image: linear-gradient(#b8babb,#6f6e73);
+}
+
+.form-p--is-color{
+    color :#669;
+}
+
+/*****roll-overs*****/
+.conteneur-btn-envoie--is-color:hover{
+    background-image: linear-gradient(#666,#444);
+
+}
+.conteneur-btn-reset--is-color:hover{
+    background-image: linear-gradient(#666,#444);
+}
+
+/***footer lien****/
+.footer-col-12-lien{
+    padding: 2%;
+    background-color: #ff7fcf;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-div-lien-conteneur{
+    width: 9em;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(120, 120,120, .2);
+}
+
+.div--rectangle{
+    width: 5px;
+    height: 6em;
+    margin-right: 2%;
+    background-color:  #ededed;;
+}
+.div-lien a{
+    text-decoration: none;
+    color: #ededed;
+}
+.div-lien p:hover{
+    background-color: rgba(120, 120,120, .8);
+}
+/*******fin grille footer*****/
+
+/************Requete Media************/
+/*Petit ecran*/
+@media screen and (max-width: 420px){
+    .menu{
+        top: 4vh;
+        right:20vw;
+        margin-left: 2%;
+
+    } 
+    .fermer{
+        position: absolute;
+        top: 4vh;
+        right:6vw;
+    }
+
+    .main{
+        width: 100%;
+        margin :1% auto;
+    }
+    .row-main{
+        margin:2% auto ;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .col-3, .col-4, .col-6{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    figure img{
+        max-width: 100%;
+    }
+    form{
+        height: 100vh;
+    }
+    .conteneur-fomulaire{
+        width: 100%;
+        height: 60%;
+        max-width: 100%;
+       /* background-color: blue;*/
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .conteneur-fomulaire p{
+        width: 80%;
+        height: 2%;
+        max-width: 100%;
+        margin: 1%;
+    }
+    .conteneur-fomulaire p > input, p > textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .conteneur-btn{
+        width: 80%;
+        max-width: 100%;
+        height: 20%;
+       /* background-color: blue;*/
+    }
+    .conteneur-btn .conteneur-btn-envoie--is-color{
+        width: 100%;
+        max-width: 100%;
+        height: 2.5em;
+    
+        margin-top: 50% ;
+        margin-left: 0;
+    }
+    .conteneur-btn .conteneur-btn-reset--is-color{
+        width: 100%;
+        max-width: 100%;
+        height: 2.5em;
+        margin-top: 5% ;
+        margin-left: 0;
+    }
+
+    .footer-col-12-lien{
+        flex-direction: column;
+    }
+}
+
+/*Moyen ecran*/
+@media  screen and (max-width : 768px) {
+    .menu{
+        top: 4vh;
+        right:8vw;
+    }
+    .fermer{
+        position: absolute;
+        top: 4vh;
+        right:8vw;
+    }
+    .row-main{
+        margin-bottom : 4% ;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    
+    }
+    .col-6{ 
+        width: 100%;
+        max-width: 100%;
+        margin-left: 2%;
+    }
+    
+    .col-4{
+        width: 30%;
+        max-width: 100%;
+        margin-left: 2%;
+    }
+    .col-3{
+        width: 40%;
+        max-width: 100%;
+        margin-left: 2%;
+    }
+    .conteneur-fomulaire{
+        width: 100%;
+        height: 50vh;
+        max-width: 100%;
+       /* background-color: blue;*/
+        margin-left: 2%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .conteneur-fomulaire p{
+        width: 40%;
+        height: 2%;
+        max-width: 100%;
+        margin: 1%;
+    }
+    .conteneur-fomulaire p > input, p > textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+    .footer-div-lien-conteneur{
+        width: 15em;
+    }
+
+    .footer-col-12-lien{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #A{
+        display: none;
+    }
+}
+
+/*Grand ecran*/
+@media  screen and (max-width : 1200px) {
+    .menu{
+        top: 4vh;
+        right:7vw;
+    }
+    .fermer{
+        position: absolute;
+        top: 4vh;
+        right:8vw;
+    }
+
+    .conteneur-fomulaire{
+        width: 80%;
+        height: 80vh;
+        max-width: 100%;
+       /* background-color: blue;*/
+        margin-left: 1%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .conteneur-fomulaire p{
+        width: 40%;
+        height: 2%;
+        max-width: 100%;
+        margin: 0%;
+    }
+    .conteneur-fomulaire p > input, p > textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+}
