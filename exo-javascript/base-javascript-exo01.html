@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--auteur Limard
+date : 25/02/2023
+objectif : calcul de surfaces-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>Calcul de surface</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    
+    </head>
+    <!--fin head-->
+    <!--debut body-->
+    <body>
+        <!--Titre du traitement-->
+        <h1>Calcul de surface</h1>
+        <!--debut script javascript-->
+        <script type="text/Javascript">
+            //Affichage de nom script
+            alert("Coucou calcul de surface");
+            //Declaration de variables
+            let rayon1, rayon2, surface1, surface2, pi, difference;
+            //Traitement
+            pi= 3.14; rayon1= 5.5; rayon2 = 3.5;
+            //Calcul de surface
+            surface1 = pi * rayon1 * rayon1;
+            surface2 = pi * rayon2 * rayon2;
+            difference = surface1 - surface2;
+            //Affichage
+            document.write("Surface de rayon 5.5 est de "+surface1);
+            document.write("Surface de rayon 3.5 est de "+surface2);
+            alert("Difference : " + difference);
+
+        </script>
+        <!--fin script javascript-->
+        <!--Affichage du code source-->
+        <br/><br/><br/>
+        <center>
+                <a href="Javascript:window.location='view-source:'+window.location">
+                    Code source 
+                </a>
+        </center>
+    </body>
+</html>
