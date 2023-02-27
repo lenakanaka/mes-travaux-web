@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--auteur Limard
+date : 25/02/2023
+objectif : calcul de surface et volume d'une sphere-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>Surface et Volume</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    
+    </head>
+    <!--fin head-->
+    <!--debut body-->
+    <body>
+        <!--Titre du traitement-->
+        <h1>Calcul de surface et volume d'un sphère</h1>
+        <!--debut script javascript-->
+        <script type="text/Javascript">
+            //Affichage de nom script
+            alert("Coucou calcul de surface");
+            //Declaration de variables
+            let rayon, surface, pi, volume;
+            //Traitement
+            pi= 3.14; 
+
+            //Calcul de surface
+            rayon = prompt("Entrez une valeur : ");
+            rayon = parseInt(rayon);
+            surface = 4 * pi * rayon * rayon;
+
+            //Calcul de volume
+            volume = surface * rayon /3;
+            //Affichage
+            document.write("Surface de rayon 5.5 est de "+surface);
+            document.write("Surface de rayon 3.5 est de "+volume);
+           
+
+        </script>
+        <!--fin script javascript-->
+        <!--Affichage du code source-->
+        <br/><br/><br/>
+        <center>
+                <a href="Javascript:window.location='view-source:'+window.location">
+                    Code source 
+                </a>
+        </center>
+    </body>
+</html>

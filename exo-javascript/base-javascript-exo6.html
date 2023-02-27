@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--auteur Limard
+date : 25/02/2023
+objectif : polynom second degre-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>Polynôme second degre</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    
+    </head>
+    <!--fin head-->
+    <!--debut body-->
+    <body>
+        <!--Titre du traitement-->
+        <h1></h1>
+        <!--debut script-->
+        <script type="text/Javascript">
+
+            alert("Coucou : exo 6");
+            //declaration de variable
+            var a , b , c, delta;
+            //Tratitement
+            a =parseInt( prompt("Donnez une valeur : "));
+            b = parseInt(prompt("Donnez une valeur : "));
+            c = parseInt(prompt("Donnez une valeur : "));
+
+            //calcul 
+            document.write("Calcul de delta ");
+            delta = (b * b )- (4 * a * c);
+            if(delta < 0)
+            {
+                document.write("pas de solution");
+            }
+            else if(delta = 0)
+            {
+                document.write("une solution "+ (- b/(2 * a)));
+            }
+            else
+            {
+                document.write("2 solutions : ");
+                document.write("");
+                document.write("solution 1 : "+((b + delta) / (2 * a)));
+                document.write("solution 2 : "+((-b + delta) / (2 * a)));
+            }
+        </script>
+        <!--fin script-->
+        
+        
+        <!--Affichage du code source-->
+        <br/><br/><br/>
+        <center>
+                <a href="Javascript:window.location='view-source:'+window.location">
+                    Code source 
+                </a>
+        </center>
+    </body>
+</html>

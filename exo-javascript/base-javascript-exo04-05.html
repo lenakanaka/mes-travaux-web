@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--auteur Limard
+date : 25/02/2023
+objectif : nombre de lettre d'un mot, 
+determination des initiales-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>Lettre et initiale</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    
+    </head>
+    <!--fin head-->
+    <!--debut body-->
+    <body>
+        <!--Titre du traitement-->
+        <h1>Nombre de lettres</h1>
+        <!--debut script-->
+        <script type="text/Javascript">
+
+            alert("Coucou : exo 4 - exo 5");
+            //declaration de variable
+            var nom, nom_initiale, prenom_initiale;
+            //Tratitement
+            nom = prompt("Donnez votre nom : ");
+            //Affichage
+            document.write("Votre nom contient : "+nom.length);
+
+            //interaction 
+            nom_initiale = prompt("Donnez votre nom : ");
+            prenom_initiale = prompt("Donnez votre prenom : ");
+
+            //calcul
+            nom_initiale = nom_initiale.substring(0,1);
+            prenom_initiale = prenom_initiale.substring(0,1);
+
+            document.write("Votre initiale est "+ nom_initiale+prenom_initiale);
+
+        </script>
+        <!--fin script-->
+        
+        
+        <!--Affichage du code source-->
+        <br/><br/><br/>
+        <center>
+                <a href="Javascript:window.location='view-source:'+window.location">
+                    Code source 
+                </a>
+        </center>
+    </body>
+</html>
