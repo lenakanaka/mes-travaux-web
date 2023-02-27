@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--auteur Limard
+date : 25/02/2023
+objectif : decombre tableau-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>tableau</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    </head>
+    <!--fin head-->
+    <!--debut body-->
+    <body>
+
+        <h1>Nombre pairs</h1>
+        <!--debut script javascript-->
+        <script type="text/Javascript">
+            //declaration de variables
+            var tab, nombre, i, n_pairs;
+            var taille = 10;
+            //Traitement
+            tab = new Array;
+            for( i = 0 ; i < taille; i++ )
+            {
+                nombre = parseInt(prompt("Entrez une valeur : "));
+                tab[i] = nombre;
+            }
+            //Affichage du tableau
+            document.write("tableau = [");
+            for(i = 0 ; i < taille ; i++)
+            {
+                document.write( tab[i]+ ", ");
+            }
+            document.write(" ]");
+
+            //Calcul de nombre pairs
+            n_pairs = 0
+            for( i = 0 ; i< taille ; i++)
+            {
+                if(tab[i] % 2  == 0)
+                {
+                    n_pairs++;
+                }
+
+            }
+            //Affichage le tableau
+            document.write("<br/><br/>");
+            document.write("le tableau contient : "+ n_pairs+ " pairs");
+
+
+        </script>
+    </body>
+
+    <!--fin body-->
+</html>
