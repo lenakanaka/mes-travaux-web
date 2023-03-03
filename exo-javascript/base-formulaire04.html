@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--auteur Limard
+date : 03/03/2023
+objectif : formulaire-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>
+            Formulaire 01
+        </title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <!--debut javascritp-->
+        <script type="text/Javascript">
+            /*Fonctiion de test de saisie*/
+            function selectionnerSport(messageAlerte) {
+
+                //Recuperation des sports proposées
+                //dans le formulaire dans un tableau
+                var tabSports = document.forms.liste_sports.sports;
+                //Determinnation de sport proposés
+                var nombreSports = tabSports.length;
+                if(nombreSports > 0)
+                {
+
+                    //Parcours du tableau des sports
+                    var i = 0;
+                    var sportSelection = false;
+                    while(i < nombreSports)
+                    {
+                        //Test si le sport est celui qui a été selectionner
+                        if(tabSports[i].checked)
+                        {
+                            //Affichage de controle
+                            alert("Votre sport favori est : "+ tabSports[i].value);
+                            //Modification du booléen sportSlection à true
+                            sportSelection = true;
+                        }
+                        i = i + 1;
+                    }
+                }
+                 //Message d'alerte si aucun sport n'a été selectionné
+                 if(!sportSelection)
+                 {
+                    //Message d'alerte
+                    alert(messageAlerte)
+                    //Valeur de retour
+                    return false;
+                 }
+                
+                else{
+                    //Valeur de retour
+                    return true;
+                }
+                
+            }
+        </script>
+        <!--fin script-->
+
+    </head>
+    <!--fin head-->
+    <!--debut body-->
+    <body>
+        <!--Titre du traitement-->
+        <h1>Edition ENI - Javascript - FORM_01</h1>
+        <!--Debut script JavaScript-->
+        <script type="text/Javascript">
+            alert("FORM_01");
+        </script>
+        <!--Formulaire de saisie HTML-->
+        <form name="liste_sports">
+
+            Sport préferé:
+            <br/>
+            <input type="radio" name="sports" value="golf"/>Golf
+            <br/>
+            <input type="radio" name="sports" value="football"/>Football
+            <br/>
+            <input type="radio" name="sports" value="natation"/>Natation
+            <br/>
+            <input type="radio" name="sports" value="tennis"/>Tennis
+            <br/>
+            <input type="button"
+            onclick="selectionnerSport('Veuillez sélectionner votre sport préferé')"
+            value="Validation saisie"/>
+
+
+        </form>
+
+        <!--Affichage du code-->
+        <br/><br/><br/>
+        <center>
+            <a href="JavaScript:window.location='view-source:'+window.location">
+                Code source
+            </a>
+        </center>
+
+    </body>
+    <!--fin body-->
+
+</html>
