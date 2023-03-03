@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--auteur Limard
+date : 03/03/2023
+objectif : formulaire-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>
+            Formulaire 01
+        </title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <!--debut javascritp-->
+        <script type="text/Javascript">
+            /*Fonctiion de test de saisie*/
+            function nonVide(champ,messageAlerte) {
+                if(champ.value.length == 0)
+                {
+                    /*Affichage d'un message d'alerte*/ 
+                    alert(messageAlerte);
+                    /*Focus sur le champ en erreur*/
+                    champ.focus();
+                    /*Valeur de retour*/
+                    return false;
+                }
+                //Valeur de retour
+                alert("Votre nom est "
+                    +document.getElementById('nom').value);
+                    return true;
+            }
+        </script>
+        <!--fin script-->
+
+    </head>
+    <!--fin head-->
+    <!--debut body-->
+    <body>
+        <!--Titre du traitement-->
+        <h1>Edition ENI - Javascript - FORM_01</h1>
+        <!--Debut script JavaScript-->
+        <script type="text/Javascript">
+            alert("FORM_01");
+        </script>
+        <!--Formulaire de saisie HTML-->
+        <form>
+            Votre nom(champ obligatoire) :
+            <input type="text" id="nom"/><input type="button"
+            onclick="nonVide(document.getElementById('nom'), 'Saisie obligatoire')"
+            value="Validation saisie"/>
+
+
+        </form>
+
+        <!--Affichage du code-->
+        <br/><br/><br/>
+        <center>
+            <a href="JavaScript:window.location='view-source:'+window.location">
+                Code source
+            </a>
+        </center>
+
+    </body>
+    <!--fin body-->
+
+</html>

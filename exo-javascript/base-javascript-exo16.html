@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--auteur Limard
+date : 25/02/2023
+objectif : Appel de procedure-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>Procedure et fonction</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    </head>
+    <!--fin head-->
+    <!--debut body-->
+    <body>
+        <h1>Appel de procedure</h1>
+        <!--debut de script-->
+        <script type="text/Javascript">
+            //declaration de variable
+            let nombre1, nombre2;
+
+            //Definition de procedure 
+            
+            function ledouble(a, b)
+            {
+               
+                //Traitement
+                a = a * 2; b = b * 2;
+                //affichage 
+                document.write("Le double de  a" + a 
+                + "Le double de b" + b);
+
+            }
+            
+            //interaction
+            nombre1 = parseInt(prompt("Entrez une valeur"));
+            nombre2 = parseInt(prompt("Entrez une valeur"));
+
+            //Appel de procedure
+            ledouble(nombre1, nombre2);
+
+        </script>
+
+        <h1>Appel de fonction</h1>
+        <!--debut script-->
+        <script type="text/Javascript">
+            //declaration de variable
+            var a , b;
+            //definition de fonction
+            function maximin(a, b) {
+
+                //Traitementb
+                if(a > b)
+                {
+                   return a;
+                }
+                else
+                {
+                   return b;
+                }
+                
+                
+            }
+
+            //interaction 
+            a =  parseInt(prompt("Entrez une valeur"));
+            b =  parseInt(prompt("Entrez une valeur"));
+
+            //appem
+            document.write("l'element sup "+ maximin(a,b));
+            
+        </script>
+
+    </body>
+    <!--fin body-->
+
+</html>
