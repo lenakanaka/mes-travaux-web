@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--auteur : Limard Goethe
+date : 04/03/2023
+objectif : le doom-->
+<!--debut html-->
+<html>
+    <!--debut head-->
+    <head>
+        <title>DOM</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    </head>
+    <!--fin head-->
+    <!--debut corps-->
+    <body>
+        <!--definition de plusieurs lien hypertextes
+        consécutif dans le doucument-->
+        <p>
+            Moteur de recherche 
+            <a href="http://www.google.fr" id="google">
+                google
+            </a><br/>
+            Site d'informations
+            <a href="http://www.yahoo.fr" id="yahoo">
+                yahoo
+            </a><br/>
+            Encyclopédie
+            <a href="http://www.wikipedia.fr" id="wikipedia">
+                Wikipédia
+            </a>
+
+            <!--debut javascript-->
+            <script type="text/JavaScript">
+                //Saut de ligne
+                document.write("<br/><br/>");
+                //Afficher nombre ed liens
+                document.write("Nombre de lien(s) 'hypertexte' du document "
+                + document.links.length+ "<br/>");
+                //affichage de l'identifiant du 2 lien
+                document.write("Identifiant du 2eme lien 'hypertexte' du document "
+                +document.links[1].id+"<br/>");
+                //Affichage de l'url du 3e lien
+                document.write("URL du 3eme lien 'hypertexte' du document "
+                +document.links[1].href+"<br/>");
+            </script>
+        </p>
+
+        
+
+        <p>
+            <!--definition de plusieurs images consécutives
+            dans le document-->
+            <img id="donkey" border="1" src="images/donkey.jpg"
+            width="150" height="100"/><br/><br/>
+
+            <img id="crazy" border="2" src="images/crazyone.jpg"
+            width="150" height="100"/><br/><br/>
+
+            <img id="ayay" border="1" src="images/ayay.jpg"
+            width="150" height="100"/><br/><br/>
+
+            <img id="smart" border="2" src="images/smart.jpg"
+            width="220" height="150"/><br/><br/>
+
+            <!--debut script-->
+            <script type="text/JavaScript">
+                //Affichage du nombre d'images du document
+                document.write("Nombre d'images du document "
+                +document.images.length+ "<br/>");
+
+                //Affichage de l'identifiant de la 1er images
+                document.write("Identifiant de la 1ere image : "
+                +document.images[0].id + "<br/>");
+
+                //Affichage de l'attribut border de la 2e images
+                document.write("Attribut border de la 2eme image : "
+                + document.images[1].border + "<br/>");
+
+                //Affichage de l'attribut src de la 3eme
+                document.write("Attribut src de la 3eme image : "
+                +document.images[2].src + "<br/>");
+
+                //Affichage de l'attribut width et height
+                document.write("Attribut width de la 4eme image : "
+                + document.images[3].width+ "<br/>");
+
+                document.write("Attribut height de la 4eme image : "
+                + document.images[3].height+ "<br/>");
+
+            </script>
+            
+        </p>
+
+
+    </body>
+    <!--fin body-->
+</html>
